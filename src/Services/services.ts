@@ -1,6 +1,6 @@
 import { useQuery } from "react-query";
 
-export const fetchData = async () => {
+const fetchData = async () => {
   let data = await fetch("https://fakestoreapi.com/products");
   return await data.json();
 };

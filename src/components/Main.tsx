@@ -27,9 +27,7 @@ const Main = () => {
       )}
       {data?.map((product: Product) => (
         <Link to={`single/${product.id}`} key={product.id}>
-          <div
-            className="md:w-[23vw] md:h-[33vh] rounded shadow-lg w-[80vw] overflow-hidden h-[20rem]"
-          >
+          <div className="md:w-[23vw] md:h-[33vh] rounded shadow-lg w-[80vw] overflow-hidden h-[20rem]">
             <img
               src={product.image}
               alt={product.title}
